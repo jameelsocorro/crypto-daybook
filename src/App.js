@@ -1,4 +1,4 @@
-import 'js-ui-kit';
+import 'js-ui-kit/assets/sass/main.scss';
 import React, { Component, Fragment } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 

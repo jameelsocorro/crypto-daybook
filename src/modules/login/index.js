@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 
+import { FormControl } from '../../components'
+
 import {
     LoginForm,
     LoginFormLogo,
@@ -10,12 +12,33 @@ class Login extends Component {
     render() {
         return (
             <div className="flex">
-                <LoginForm className="p-40">
-                    <LoginFormLogo className="mt-48 mb-64"></LoginFormLogo>
-                    <h3 className="mb-40">Sign In</h3>
-                    <input className="mb-16 w-100" placeholder="Email" type="text"/>
-                    <input className="mb-72 w-100" placeholder="Password" type="password"/>
+                <LoginForm className="p-80">
+
+                    <LoginFormLogo><span className="warning-text">crypto</span> <span className="secondary-text">daybook</span></LoginFormLogo>
+
+                    <div>
+                        <h4 className="mb-8">Welcome trader!</h4>
+                        <h6 className="grey-text">win or lose, always record your trades</h6>
+                    </div>
+
+                    <div className="">
+                        <FormControl
+                            label="Email Address"
+                            className="mb-16 w-100"
+                            placeholder="Enter your email"
+                            type="text"/>
+                        <FormControl
+                            label="Password"
+                            className="mb-16 w-100"
+                            placeholder="Enter your password"
+                            type="password"/>
+
+                        <a href="#" className="btn-link">Forgot Password</a>
+                    </div>
+
+
                     <button className="btn btn-secondary w-100">Sign In</button>
+
                 </LoginForm>
                 <LoginHeroContainer>
                     <LoginHeroBackground></LoginHeroBackground>
